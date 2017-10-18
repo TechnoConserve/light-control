@@ -1,8 +1,7 @@
-#!/usr/bin/python
+#!/home/pi/venv/lights/bin/python
 
 import bluetooth
 import time
-import os
 import datetime
 
 import party
