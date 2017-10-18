@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b16ff1f8-e5d7-44b4-8324-a6352c51f28f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/party.py" afterPath="$PROJECT_DIR$/party.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/whoshome.py" afterPath="$PROJECT_DIR$/whoshome.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,8 +27,8 @@
       <file leaf-file-name="party.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/party.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="40" column="16" lean-forward="true" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+            <state relative-caret-position="174">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -142,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508364926674</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Conversions for upgrade to BiblioPixel 3.0">
+      <created>1508366234644</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1508366234644</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -179,7 +184,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added gitignore." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added gitignore." />
+    <MESSAGE value="Conversions for upgrade to BiblioPixel 3.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Conversions for upgrade to BiblioPixel 3.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -204,8 +210,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/party.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="40" column="16" lean-forward="true" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+        <state relative-caret-position="174">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>
