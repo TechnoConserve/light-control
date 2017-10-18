@@ -27,8 +27,8 @@
       <file leaf-file-name="party.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/party.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="40" column="16" lean-forward="true" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+            <state relative-caret-position="89">
+              <caret line="27" column="79" lean-forward="false" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="79" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -154,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508366612851</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added interface parameter and fixed deprecated parameter name for SPI speed.">
+      <created>1508366898802</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1508366898802</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -193,7 +200,8 @@
     <MESSAGE value="Added gitignore." />
     <MESSAGE value="Conversions for upgrade to BiblioPixel 3.0" />
     <MESSAGE value="Changed format of ledtype." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed format of ledtype." />
+    <MESSAGE value="Added interface parameter and fixed deprecated parameter name for SPI speed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added interface parameter and fixed deprecated parameter name for SPI speed." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -218,8 +226,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/party.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="40" column="16" lean-forward="true" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+        <state relative-caret-position="89">
+          <caret line="27" column="79" lean-forward="false" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="79" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>
