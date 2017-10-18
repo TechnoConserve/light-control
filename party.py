@@ -25,7 +25,7 @@ class StripTest(BaseStripAnim):
 
 def init():
     # create driver for a 162 pixels
-    driver = SPI(ledtype=1, num=162, c_order=ChannelOrder.GRB, use_py_spi=True, dev='/dev/spidev0.0', SPISpeed=16)
+    driver = SPI(ledtype=1, num=162, c_order=ChannelOrder.GRB, interface='PERIPHERY', dev='/dev/spidev0.0', spi_speed=16)
     #driver = DriverLPD8806(162, c_order=ChannelOrder.GRB, use_py_spi=True, dev='/dev/spidev0.0', SPISpeed=16)
     led = Strip(driver)
     return led
