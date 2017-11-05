@@ -12,7 +12,7 @@ from BiblioPixelAnimations.strip.ColorChase import ColorChase
 from BiblioPixelAnimations.strip.ColorFade import ColorFade
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--state", help("Specify if the party lights should be on or off."))
+parser.add_argument("--state", help="Specify if the party lights should be on or off.", type=str)
 
 
 def init():
