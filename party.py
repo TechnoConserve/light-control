@@ -45,13 +45,13 @@ def get_colors():
 def start_party():
     led = init()
     anim = get_anim(led)
-    anim.run(fps=10)
+    anim.start()
 
 
 def stop_party():
     led = init()
     anim = OffAnim(led)
-    anim.run()
+    anim.start()
 
 
 if __name__ == '__main__':
