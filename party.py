@@ -56,7 +56,7 @@ def stop_party():
 
 if __name__ == '__main__':
     args = parser.parse_args()
-    if args.state.lower() == 'off':
+    if args.state and args.state.lower() == 'off':
         stop_party()
     else:
         start_party()
