@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import argparse
 from ast import literal_eval as make_tuple
 import json
