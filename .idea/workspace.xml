@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b16ff1f8-e5d7-44b4-8324-a6352c51f28f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/custom_colors" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/party.py" afterPath="$PROJECT_DIR$/party.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,19 +24,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="party.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="party.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/party.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="695">
+              <caret line="59" column="8" lean-forward="false" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
               <folding>
-                <element signature="e#0#42#0" expanded="true" />
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom_colors" pinned="false" current-in-tab="true">
+      <file leaf-file-name="custom_colors" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/custom_colors">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
@@ -66,8 +66,8 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/whoshome.py" />
-        <option value="$PROJECT_DIR$/party.py" />
         <option value="$PROJECT_DIR$/custom_colors" />
+        <option value="$PROJECT_DIR$/party.py" />
       </list>
     </option>
   </component>
@@ -194,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509847450790</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added custom color JSON file.">
+      <created>1509847532778</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1509847532778</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -237,7 +244,8 @@
     <MESSAGE value="Changed interface to PYDEV." />
     <MESSAGE value="When back to PERIPHERY interface since PYDEV is an older library with no significant speed improvements." />
     <MESSAGE value="Changed script to allow cycling random animations." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed script to allow cycling random animations." />
+    <MESSAGE value="Added custom color JSON file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added custom color JSON file." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -265,7 +273,7 @@
         <state relative-caret-position="629">
           <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
-            <element signature="e#0#42#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -291,7 +299,7 @@
         <state relative-caret-position="527">
           <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
-            <element signature="e#0#42#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -312,21 +320,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/party.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/custom_colors">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/party.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="695">
+          <caret line="59" column="8" lean-forward="false" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

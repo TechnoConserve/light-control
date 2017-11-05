@@ -1,3 +1,4 @@
+import argparse
 from ast import literal_eval as make_tuple
 import json
 from random import randint
@@ -8,6 +9,9 @@ from bibliopixel.drivers.SPI.LPD8806 import LPD8806
 from BiblioPixelAnimations.strip.Alternates import Alternates
 from BiblioPixelAnimations.strip.ColorChase import ColorChase
 from BiblioPixelAnimations.strip.ColorFade import ColorFade
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--state", help("Specify if the party lights should be on or off."))
 
 
 def init():
@@ -50,4 +54,8 @@ def stop_party():
 
 
 if __name__ == '__main__':
-    start_party()
+    args = parser.parse_args()
+    if args.state.lower() == 'off':
+        stop_party()
+    else:
+        start_party()
