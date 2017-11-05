@@ -59,7 +59,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     if args.state and args.state.lower() == 'off':
         e = threading.Event()
-        stop_thread = threading.Thread(target=stop_party, args=(e,))
+        stop_thread = threading.Thread(target=stop_party)
         stop_thread.run()
         stop_thread.join(10)
         e.set()
