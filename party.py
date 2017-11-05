@@ -45,16 +45,13 @@ def get_colors():
 def start_party():
     led = init()
     anim = get_anim(led)
-    try:
-        anim.start()
-    except AttributeError:
-        anim.run()
+    anim.run_all_frames()
 
 
 def stop_party():
     led = init()
     anim = OffAnim(led)
-    anim.start()
+    anim.run_all_frames()
 
 
 if __name__ == '__main__':
