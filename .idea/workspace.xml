@@ -27,8 +27,8 @@
       <file leaf-file-name="party.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/party.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="47" column="12" lean-forward="false" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+            <state relative-caret-position="678">
+              <caret line="65" column="26" lean-forward="false" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
               <folding>
                 <element signature="e#19#34#0" expanded="true" />
               </folding>
@@ -250,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509849687698</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Back to run even though the source code says it's deprecated.">
+      <created>1509849899042</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1509849899042</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -301,7 +308,8 @@
     <MESSAGE value="Changed from run to start." />
     <MESSAGE value="Catch errors for animations that use deprecated run method." />
     <MESSAGE value="Fix for the fixes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix for the fixes." />
+    <MESSAGE value="Back to run even though the source code says it's deprecated." />
+    <option name="LAST_COMMIT_MESSAGE" value="Back to run even though the source code says it's deprecated." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -386,8 +394,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/party.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="47" column="12" lean-forward="false" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+        <state relative-caret-position="678">
+          <caret line="65" column="26" lean-forward="false" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
           <folding>
             <element signature="e#19#34#0" expanded="true" />
           </folding>

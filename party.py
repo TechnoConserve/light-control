@@ -3,6 +3,7 @@ import argparse
 from ast import literal_eval as make_tuple
 import json
 from random import randint
+import threading
 
 from bibliopixel.layout import Strip
 from bibliopixel.animation import OffAnim
@@ -57,6 +58,11 @@ def stop_party():
 if __name__ == '__main__':
     args = parser.parse_args()
     if args.state and args.state.lower() == 'off':
-        stop_party()
+        e = threading.Event()
+        stop_thread = threading.Thread(target=stop_party, args=(e,))
+        stop_thread.run()
+        stop_thread.join(10)
+        e.set()
+        stop_thread.join()
     else:
         start_party()
