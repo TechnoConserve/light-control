@@ -1,39 +1,46 @@
-from time import sleep
+from ast import literal_eval as make_tuple
+import json
+from random import randint
 
 from bibliopixel.layout import Strip
-from bibliopixel.animation import BaseStripAnim, OffAnim
-from bibliopixel.drivers.SPI import SPI
-from bibliopixel.drivers.driver_base import ChannelOrder
-from bibliopixel import colors
-
-
-class StripTest(BaseStripAnim):
-    def __init__(self, led, start=0, end=-1):
-        # The base class MUST be initialized by calling super like this
-        super(StripTest, self).__init__(led, start, end)
-        # Create a color array to use in the animation
-        self._colors = [colors.Red, colors.Orange, colors.Yellow, colors.Green, colors.Blue, colors.Indigo]
-
-    def step(self, amt=1):
-        # Fill the strip, with each sucessive color
-        for i in range(self._led.numLEDs):
-            self._led.set(i, self._colors[(self._step + i) % len(self._colors)])
-        # Increment the internal step by the given amount
-        self._step += amt
-        sleep(0.1)
+from bibliopixel.animation import OffAnim
+from bibliopixel.drivers.SPI.LPD8806 import LPD8806
+from BiblioPixelAnimations.strip.Alternates import Alternates
+from BiblioPixelAnimations.strip.ColorChase import ColorChase
+from BiblioPixelAnimations.strip.ColorFade import ColorFade
 
 
 def init():
     # create driver for a 162 pixels
-    driver = SPI(ledtype=1, num=162, c_order=ChannelOrder.GRB, interface='PERIPHERY', dev='/dev/spidev0.0', spi_speed=16)
+    driver = LPD8806(num=162)
     led = Strip(driver)
     return led
 
 
+def get_anim(led):
+    color1, color2 = get_colors()
+    choice = randint(0, 2)
+    if choice == 0:
+        anim = Alternates(led, max_led=162, color1=color1, color2=color2)
+    if choice == 1:
+        anim = ColorChase(led, color=color1)
+    if choice == 2:
+        anim = ColorFade(led, colors=color1)
+    return anim
+
+
+def get_colors():
+    with open('custom_colors') as f:
+        data = json.load(f)
+        color1 = make_tuple(data["color1"])
+        color2 = make_tuple(data["color2"])
+    return color1, color2
+
+
 def start_party():
     led = init()
-    anim = StripTest(led)
-    anim.run(fps=8, seconds=60)
+    anim = get_anim(led)
+    anim.run(fps=10)
 
 
 def stop_party():
