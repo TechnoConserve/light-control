@@ -13,6 +13,8 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 from watchdog.events import FileModifiedEvent
 
+CUSTOM_COLOR_PATH = '/home/pi/lights/custom_colors'
+
 parser = argparse.ArgumentParser()
 parser.add_argument("--state", help="Specify if the party lights should be on or off.", type=str)
 
@@ -43,7 +45,7 @@ def get_anim(led):
 
 
 def get_colors():
-    with open('custom_colors') as f:
+    with open(CUSTOM_COLOR_PATH) as f:
         data = json.load(f)
         color1 = data["color1"]
         color2 = data["color2"]
