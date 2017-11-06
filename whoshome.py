@@ -1,4 +1,4 @@
-#!/home/pi/venv/lights/bin/python
+#!/home/pi/venv/home_control/bin/python
 
 import bluetooth
 import time
