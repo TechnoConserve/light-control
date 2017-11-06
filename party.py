@@ -10,9 +10,16 @@ from bibliopixel.drivers.SPI.LPD8806 import LPD8806
 from BiblioPixelAnimations.strip.Alternates import Alternates
 from BiblioPixelAnimations.strip.ColorChase import ColorChase
 from BiblioPixelAnimations.strip.ColorFade import ColorFade
+from watchdog.observers import Observer
+from watchdog.events import FileSystemEventHandler
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--state", help="Specify if the party lights should be on or off.", type=str)
+
+
+class MyHandler(FileSystemEventHandler):
+    def on_modified(self, event):
+        print("Modified!")
 
 
 def init():
@@ -45,16 +52,21 @@ def get_colors():
 def start_party():
     led = init()
     anim = get_anim(led)
-    anim.run()
+    anim.run(seconds=60)
 
 
 def stop_party():
     led = init()
     anim = OffAnim(led)
-    anim.run(seconds=10)
+    anim.run(seconds=5)
 
 
 if __name__ == '__main__':
+    path = '/home/pi/lights/custom_colors'
+    event_handler = FileSystemEventHandler()
+    observer = Observer()
+    observer.schedule(event_handler, path)
+    observer.start()
     args = parser.parse_args()
     if args.state and args.state.lower() == 'off':
         stop_party()
