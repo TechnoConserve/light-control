@@ -73,4 +73,9 @@ if __name__ == '__main__':
     if args.state and args.state.lower() == 'off':
         stop_party()
     else:
-        start_party()
+        try:
+            while True:
+                start_party()
+        except KeyboardInterrupt:
+            observer.stop()
+        observer.join()
