@@ -12,6 +12,7 @@ from BiblioPixelAnimations.strip.ColorChase import ColorChase
 from BiblioPixelAnimations.strip.ColorFade import ColorFade
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
+from watchdog.events import FileModifiedEvent
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--state", help="Specify if the party lights should be on or off.", type=str)
@@ -19,7 +20,8 @@ parser.add_argument("--state", help="Specify if the party lights should be on or
 
 class MyHandler(FileSystemEventHandler):
     def on_modified(self, event):
-        print("Modified!")
+        if event == FileModifiedEvent:
+            print("{} Modified!".FileModifiedEvent.src_path)
 
 
 def init():
@@ -62,8 +64,8 @@ def stop_party():
 
 
 if __name__ == '__main__':
-    path = '/home/pi/lights/custom_colors'
-    event_handler = FileSystemEventHandler()
+    path = '.'
+    event_handler = MyHandler()
     observer = Observer()
     observer.schedule(event_handler, path)
     observer.start()

@@ -27,8 +27,8 @@
       <file leaf-file-name="party.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/party.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="729">
-              <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+            <state relative-caret-position="559">
+              <caret line="66" column="14" lean-forward="true" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
               <folding>
                 <element signature="e#19#34#0" expanded="true" />
               </folding>
@@ -285,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509933966281</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Adding watchdog to check of changes to custom colors.">
+      <created>1509991698733</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1509991698733</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -341,7 +348,8 @@
     <MESSAGE value="Removed thread Event passed to stop_party function." />
     <MESSAGE value="Removed threading attempts and added seconds parameter to stop_party animation run call." />
     <MESSAGE value="Removed unused import." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed unused import." />
+    <MESSAGE value="Adding watchdog to check of changes to custom colors." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding watchdog to check of changes to custom colors." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -426,8 +434,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/party.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+        <state relative-caret-position="559">
+          <caret line="66" column="14" lean-forward="true" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
           <folding>
             <element signature="e#19#34#0" expanded="true" />
           </folding>
