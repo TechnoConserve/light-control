@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import argparse
 import json
 from random import randint
 
@@ -9,17 +8,8 @@ from bibliopixel.drivers.SPI.LPD8806 import LPD8806
 from BiblioPixelAnimations.strip.Alternates import Alternates
 from BiblioPixelAnimations.strip.ColorChase import ColorChase
 from BiblioPixelAnimations.strip.ColorFade import ColorFade
-from watchdog.observers import Observer
-from watchdog.events import FileSystemEventHandler
-from watchdog.events import FileModifiedEvent
 
 CUSTOM_COLOR_PATH = '/home/pi/lights/custom_colors'
-
-
-class MyHandler(FileSystemEventHandler):
-    def on_modified(self, event):
-        if isinstance(event, FileModifiedEvent):
-            print("{} Modified!".format(FileModifiedEvent.src_path))
 
 
 def init():
@@ -62,15 +52,8 @@ def stop_party():
 
 
 if __name__ == '__main__':
-    path = '.'
-    event_handler = MyHandler()
-    observer = Observer()
-    observer.schedule(event_handler, path)
-    observer.start()
     try:
         while True:
             start_party()
     except KeyboardInterrupt:
-        observer.stop()
         stop_party()
-    observer.join()
