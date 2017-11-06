@@ -27,8 +27,8 @@
       <file leaf-file-name="party.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/party.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="678">
-              <caret line="79" column="33" lean-forward="true" selection-start-line="79" selection-start-column="33" selection-end-line="79" selection-end-column="33" />
+            <state relative-caret-position="202">
+              <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
               <folding>
                 <element signature="e#19#34#0" expanded="true" />
               </folding>
@@ -306,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509992521039</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="ColorFade animation required list passed to colors.">
+      <created>1509993264815</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1509993264815</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -365,7 +372,8 @@
     <MESSAGE value="Adding watchdog to check of changes to custom colors." />
     <MESSAGE value="Changed watchdog path to directory." />
     <MESSAGE value="Continually run after started." />
-    <option name="LAST_COMMIT_MESSAGE" value="Continually run after started." />
+    <MESSAGE value="ColorFade animation required list passed to colors." />
+    <option name="LAST_COMMIT_MESSAGE" value="ColorFade animation required list passed to colors." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -450,8 +458,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/party.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="678">
-          <caret line="79" column="33" lean-forward="true" selection-start-line="79" selection-start-column="33" selection-end-line="79" selection-end-column="33" />
+        <state relative-caret-position="202">
+          <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
           <folding>
             <element signature="e#19#34#0" expanded="true" />
           </folding>
