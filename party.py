@@ -3,7 +3,6 @@ import argparse
 from ast import literal_eval as make_tuple
 import json
 from random import randint
-import threading
 
 from bibliopixel.layout import Strip
 from bibliopixel.animation import OffAnim
