@@ -17,8 +17,8 @@
       <file leaf-file-name="whoshome.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/whoshome.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="323">
+              <caret line="19" column="59" lean-forward="false" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
               <folding>
                 <element signature="e#20#36#0" expanded="true" />
               </folding>
@@ -378,7 +378,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510009617947</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Added SIGKILL signals to exit gracefully.">
+      <created>1510009792125</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1510009792125</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -414,7 +421,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added custom color JSON file." />
     <MESSAGE value="Added argument to allow lights to be turned off." />
     <MESSAGE value="Added shebang line to file." />
     <MESSAGE value="Fixed help text in argparser and added type." />
@@ -439,7 +445,8 @@
     <MESSAGE value="Removed watchdog from script." />
     <MESSAGE value="Corrected shebang line of whoshome script." />
     <MESSAGE value="Gracefully handle killing the the script." />
-    <option name="LAST_COMMIT_MESSAGE" value="Gracefully handle killing the the script." />
+    <MESSAGE value="Added SIGKILL signals to exit gracefully." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added SIGKILL signals to exit gracefully." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -530,8 +537,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/whoshome.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="323">
+          <caret line="19" column="59" lean-forward="false" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
           <folding>
             <element signature="e#20#36#0" expanded="true" />
           </folding>
