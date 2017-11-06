@@ -20,6 +20,7 @@ parser.add_argument("--state", help="Specify if the party lights should be on or
 
 class MyHandler(FileSystemEventHandler):
     def on_modified(self, event):
+        print("Something modified!")
         if event == FileModifiedEvent:
             print("{} Modified!".FileModifiedEvent.src_path)
 
@@ -39,7 +40,7 @@ def get_anim(led):
     if choice == 1:
         anim = ColorChase(led, color=color1)
     if choice == 2:
-        anim = ColorFade(led, colors=color1)
+        anim = ColorFade(led, colors=[color1, color2])
     return anim
 
 
