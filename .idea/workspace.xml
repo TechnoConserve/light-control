@@ -27,8 +27,8 @@
       <file leaf-file-name="party.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/party.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+            <state relative-caret-position="338">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding>
                 <element signature="e#19#34#0" expanded="true" />
               </folding>
@@ -313,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509993264815</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Attempting to determine event through by Observer.">
+      <created>1509993493614</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1509993493614</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -373,7 +380,8 @@
     <MESSAGE value="Changed watchdog path to directory." />
     <MESSAGE value="Continually run after started." />
     <MESSAGE value="ColorFade animation required list passed to colors." />
-    <option name="LAST_COMMIT_MESSAGE" value="ColorFade animation required list passed to colors." />
+    <MESSAGE value="Attempting to determine event through by Observer." />
+    <option name="LAST_COMMIT_MESSAGE" value="Attempting to determine event through by Observer." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -458,8 +466,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/party.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+        <state relative-caret-position="338">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
             <element signature="e#19#34#0" expanded="true" />
           </folding>

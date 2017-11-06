@@ -20,10 +20,8 @@ parser.add_argument("--state", help="Specify if the party lights should be on or
 
 class MyHandler(FileSystemEventHandler):
     def on_modified(self, event):
-        print("Something modified!")
-        print("Event:", event)
-        if event == FileModifiedEvent:
-            print("{} Modified!".FileModifiedEvent.src_path)
+        if isinstance(event, FileModifiedEvent):
+            print("{} Modified!".format(FileModifiedEvent.src_path))
 
 
 def init():
