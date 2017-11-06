@@ -15,9 +15,6 @@ from watchdog.events import FileModifiedEvent
 
 CUSTOM_COLOR_PATH = '/home/pi/lights/custom_colors'
 
-parser = argparse.ArgumentParser()
-parser.add_argument("--state", help="Specify if the party lights should be on or off.", type=str)
-
 
 class MyHandler(FileSystemEventHandler):
     def on_modified(self, event):
@@ -55,7 +52,7 @@ def get_colors():
 def start_party():
     led = init()
     anim = get_anim(led)
-    anim.run(seconds=60)
+    anim.run(seconds=30)
 
 
 def stop_party():
@@ -70,13 +67,10 @@ if __name__ == '__main__':
     observer = Observer()
     observer.schedule(event_handler, path)
     observer.start()
-    args = parser.parse_args()
-    if args.state and args.state.lower() == 'off':
+    try:
+        while True:
+            start_party()
+    except KeyboardInterrupt:
+        observer.stop()
         stop_party()
-    else:
-        try:
-            while True:
-                start_party()
-        except KeyboardInterrupt:
-            observer.stop()
-        observer.join()
+    observer.join()

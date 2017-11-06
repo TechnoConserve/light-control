@@ -27,8 +27,8 @@
       <file leaf-file-name="party.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/party.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="47" column="31" lean-forward="false" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+            <state relative-caret-position="627">
+              <caret line="69" column="8" lean-forward="true" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
               <folding>
                 <element signature="e#19#34#0" expanded="true" />
               </folding>
@@ -334,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509999090786</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Added full path to custom_color file.">
+      <created>1510000450711</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1510000450711</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -370,7 +377,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Changed format of ledtype." />
     <MESSAGE value="Added interface parameter and fixed deprecated parameter name for SPI speed." />
     <MESSAGE value="Changed interface to PYDEV." />
     <MESSAGE value="When back to PERIPHERY interface since PYDEV is an older library with no significant speed improvements." />
@@ -395,7 +401,8 @@
     <MESSAGE value="Attempting to determine event through by Observer." />
     <MESSAGE value="Simplifying file modification checking." />
     <MESSAGE value="Changed custom color representation to list." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed custom color representation to list." />
+    <MESSAGE value="Added full path to custom_color file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added full path to custom_color file." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -480,8 +487,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/party.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="47" column="31" lean-forward="false" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+        <state relative-caret-position="627">
+          <caret line="69" column="8" lean-forward="true" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
           <folding>
             <element signature="e#19#34#0" expanded="true" />
           </folding>
