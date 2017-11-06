@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 import argparse
-from ast import literal_eval as make_tuple
 import json
 from random import randint
 
@@ -46,8 +45,8 @@ def get_anim(led):
 def get_colors():
     with open('custom_colors') as f:
         data = json.load(f)
-        color1 = make_tuple(data["color1"])
-        color2 = make_tuple(data["color2"])
+        color1 = data["color1"]
+        color2 = data["color2"]
     return color1, color2
 
 
