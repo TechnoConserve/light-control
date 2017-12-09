@@ -1,18 +1,20 @@
 #!/usr/bin/python3
 
 import bluetooth
-import time
 import datetime
+import json
 import signal
+import time
 
 import party
 
 start = datetime.time(7, 00)
 end = datetime.time(21, 30)
-partytime = False
+
+PARTY_FILE = '/home/pi/lights/party.json'
 
 
-class GracefulKiller():
+class GracefulKiller:
     kill_now = False
 
     def __init__(self):
@@ -23,11 +25,19 @@ class GracefulKiller():
         self.kill_now = True
 
 
+def get_party_time():
+    with open(PARTY_FILE) as f:
+        data = json.load(f)
+        party_value = data['party']
+    return party_value
+
+
 if __name__ == '__main__':
     killer = GracefulKiller()
     while True:
         now = datetime.datetime.now().time()
         print("The time is: " + str(now))
+        partytime = get_party_time()
 
         if start <= now <= end or partytime:
             if killer.kill_now:
@@ -38,7 +48,7 @@ if __name__ == '__main__':
                 print("Result: ", result)
 
                 if result is not None or partytime:
-                    print ("...he's here...Muahahahahaha")
+                    print("...he's here...Muahahahahaha")
                     party.start_party()
                 else:
                     print("No one home. A pity.")
