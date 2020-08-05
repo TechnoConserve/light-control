@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b16ff1f8-e5d7-44b4-8324-a6352c51f28f" name="Default" comment="Added requirements.txt file">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="b16ff1f8-e5d7-44b4-8324-a6352c51f28f" name="Default" comment="Explained setup in README.md" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +42,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1508359726445</updated>
-      <workItem from="1596656984334" duration="1723000" />
+      <workItem from="1596656984334" duration="2344000" />
     </task>
     <task id="LOCAL-00001" summary="Added gitignore.">
       <created>1508364926674</created>
@@ -313,14 +310,20 @@
       <option name="project" value="LOCAL" />
       <updated>1596657860062</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Explained setup in README.md">
+      <created>1596659179462</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1596659179462</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Changed from run to start." />
     <MESSAGE value="Catch errors for animations that use deprecated run method." />
     <MESSAGE value="Fix for the fixes." />
     <MESSAGE value="Back to run even though the source code says it's deprecated." />
@@ -345,16 +348,17 @@
     <MESSAGE value="Removed old script." />
     <MESSAGE value="Make party time check from external file allowing external scripts to alter it." />
     <MESSAGE value="Added requirements.txt file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added requirements.txt file" />
+    <MESSAGE value="Explained setup in README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Explained setup in README.md" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="441" y="91" width="1028" height="851" key="CommitChangelistDialog2" timestamp="1596657860014">
+    <state x="441" y="91" width="1028" height="851" key="CommitChangelistDialog2" timestamp="1596659179398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="441" y="91" width="1028" height="851" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1596657860014" />
-    <state x="555" y="255" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1596657861683">
+    <state x="441" y="91" width="1028" height="851" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1596659179398" />
+    <state x="555" y="255" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1596659181067">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="555" y="255" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596657861683" />
+    <state x="555" y="255" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596659181067" />
   </component>
 </project>

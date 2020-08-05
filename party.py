@@ -9,8 +9,6 @@ from BiblioPixelAnimations.strip.Alternates import Alternates
 from BiblioPixelAnimations.strip.ColorChase import ColorChase
 from BiblioPixelAnimations.strip.ColorFade import ColorFade
 
-CUSTOM_COLOR_PATH = '/home/pi/lights/custom_colors'
-
 
 def init():
     # create driver for a 162 pixels
@@ -32,7 +30,7 @@ def get_anim(led):
 
 
 def get_colors():
-    with open(CUSTOM_COLOR_PATH) as f:
+    with open('custom_colors') as f:
         data = json.load(f)
         color1 = data["color1"]
         color2 = data["color2"]
