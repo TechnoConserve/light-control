@@ -11,8 +11,6 @@ import party
 start = datetime.time(7, 00)
 end = datetime.time(21, 30)
 
-PARTY_FILE = '/home/pi/lights/party.json'
-
 
 class GracefulKiller:
     kill_now = False
@@ -26,7 +24,7 @@ class GracefulKiller:
 
 
 def get_party_time():
-    with open(PARTY_FILE) as f:
+    with open('party.json') as f:
         data = json.load(f)
         party_value = data['party']
     return party_value

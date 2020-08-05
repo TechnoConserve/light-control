@@ -16,6 +16,7 @@ loady==1.8.10
 MarkupSafe==1.1.1
 natsort==7.0.1
 numpy==1.19.1
+PyBluez==0.23
 pyserial==3.4
 python-dateutil==2.8.1
 PyYAML==5.3.1
