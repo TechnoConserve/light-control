@@ -3,5 +3,5 @@
   <component name="PreferredVcsStorage">
     <preferredVcsName>ApexVCS</preferredVcsName>
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.8 (light-control)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Remote Python 2.7.16 (sftp://pi@10.0.0.141:22/usr/bin/python)" project-jdk-type="Python SDK" />
 </project>

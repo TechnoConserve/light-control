@@ -1,7 +1,11 @@
 # light-control
-Controls my LED strip.
+Controls my LPD8806 LED strip.
 
-Interacts closely with my home-control repository.
+The whoshome.py script uses python3 which itself will run party.py using python2.7 since it makes
+use of the now deprecated RPi-LPD8806 library written for Python 2.
+
+Formerly interacted closely with my home-control repository. This latest re-write ignore the
+home-control library for now.
 
 # Setup
 
@@ -12,5 +16,5 @@ cd light-control
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-python party.py
+python whoshome.py
 ```

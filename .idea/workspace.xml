@@ -1,13 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b16ff1f8-e5d7-44b4-8324-a6352c51f28f" name="Default" comment="Removed CUSTOM_COLOR_PATH variable and replaced with relative path.">
+    <list default="true" id="b16ff1f8-e5d7-44b4-8324-a6352c51f28f" name="Default" comment="Added PyBluez to requirements.txt&#10;&#10;Removed PARTY_FILE variable in favor of relative import.">
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/light-control.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/light-control.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.whitesource" beforeDir="false" afterPath="$PROJECT_DIR$/.whitesource" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom_colors" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/party.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/party.py" beforeDir="false" afterPath="$PROJECT_DIR$/party.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whoshome.py" beforeDir="false" afterPath="$PROJECT_DIR$/whoshome.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -23,6 +47,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -44,7 +71,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1508359726445</updated>
-      <workItem from="1596656984334" duration="4010000" />
+      <workItem from="1596656984334" duration="4505000" />
+      <workItem from="1597601286135" duration="75000" />
+      <workItem from="1616216423214" duration="13490000" />
     </task>
     <task id="LOCAL-00001" summary="Added gitignore.">
       <created>1508364926674</created>
@@ -326,14 +355,20 @@
       <option name="project" value="LOCAL" />
       <updated>1596665264894</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Added PyBluez to requirements.txt&#10;&#10;Removed PARTY_FILE variable in favor of relative import.">
+      <created>1596667262984</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1596667262984</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix for the fixes." />
     <MESSAGE value="Back to run even though the source code says it's deprecated." />
     <MESSAGE value="Added threading to turning off lights since it tends to hang after turning them off." />
     <MESSAGE value="Removed thread Event passed to stop_party function." />
@@ -358,20 +393,7 @@
     <MESSAGE value="Added requirements.txt file" />
     <MESSAGE value="Explained setup in README.md" />
     <MESSAGE value="Removed CUSTOM_COLOR_PATH variable and replaced with relative path." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed CUSTOM_COLOR_PATH variable and replaced with relative path." />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="441" y="91" width="1028" height="851" key="CommitChangelistDialog2" timestamp="1596665264841">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="441" y="91" width="1028" height="851" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1596665264841" />
-    <state x="555" y="255" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1596665266454">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="555" y="255" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596665266454" />
-    <state x="623" y="228" key="search.everywhere.popup" timestamp="1596665847777">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="228" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1596665847777" />
+    <MESSAGE value="Added PyBluez to requirements.txt&#10;&#10;Removed PARTY_FILE variable in favor of relative import." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added PyBluez to requirements.txt&#10;&#10;Removed PARTY_FILE variable in favor of relative import." />
   </component>
 </project>

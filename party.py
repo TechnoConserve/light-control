@@ -1,57 +1,153 @@
-#!/usr/bin/python3
-import json
-from random import randint
+#!/usr/bin/python
+from datetime import datetime
+from random import randint, uniform
 
-from bibliopixel.layout import Strip
-from bibliopixel.animation import OffAnim
-from bibliopixel.drivers.SPI.LPD8806 import LPD8806
-from BiblioPixelAnimations.strip.Alternates import Alternates
-from BiblioPixelAnimations.strip.ColorChase import ColorChase
-from BiblioPixelAnimations.strip.ColorFade import ColorFade
+from bootstrap import *
 
 
-def init():
-    # create driver for a 162 pixels
-    driver = LPD8806(num=162)
-    led = Strip(driver)
-    return led
+def get_random_color_value():
+    """
+    Return a floating point value between 0 and 255, rounded to the
+    nearest tenth place.
+    :return: floating point value between 0 and 255.
+    """
+    return round(uniform(0, 255), 1)
 
 
-def get_anim(led):
-    color1, color2 = get_colors()
-    choice = randint(0, 2)
-    if choice == 0:
-        anim = Alternates(led, max_led=162, color1=color1, color2=color2)
-    if choice == 1:
-        anim = ColorChase(led, color=color1)
-    if choice == 2:
-        anim = ColorFade(led, colors=[color1, color2])
-    return anim
+def step_thru_colors():
+    # setup colors to loop through for fade
+    colors = [
+        (get_random_color_value(), get_random_color_value(), get_random_color_value()),
+        (get_random_color_value(), get_random_color_value(), get_random_color_value()),
+        (get_random_color_value(), get_random_color_value(), get_random_color_value()),
+        (get_random_color_value(), get_random_color_value(), get_random_color_value()),
+    ]
+
+    step = 0.01
+    for c in range(4):
+        r, g, b = colors[c]
+        level = 0.01
+        direction = step
+        while level >= 0.0:
+            led.fill(Color(r, g, b, level))
+            led.update()
+            if level >= 0.99:
+                direction = -step
+            level += direction
+
+    led.all_off()
 
 
-def get_colors():
-    with open('custom_colors') as f:
-        data = json.load(f)
-        color1 = data["color1"]
-        color2 = data["color2"]
-    return color1, color2
+def do_the_wave():
+    # animations - each animation method moves the animation forward one step on each call
+    # after each step, call update() to push it to the LED strip
+    # sin wave animations
+    anim = Wave(led, Color(randint(0, 255)), Color(randint(0, 255)), Color(randint(0, 255)), randint(1, 5))
+    for i in range(led.lastIndex):
+        anim.step()
+        led.update()
+
+    led.all_off()
 
 
-def start_party():
-    led = init()
-    anim = get_anim(led)
-    anim.run(seconds=30)
+def make_a_rainbow():
+    # rolling rainbow
+    anim = Rainbow(led)
+    for i in range(384):
+        anim.step()
+        led.update()
+
+    led.fillOff()
 
 
-def stop_party():
-    led = init()
-    anim = OffAnim(led)
-    anim.run(seconds=5)
+def even_rainbow():
+    # evenly distributed rainbow
+    anim = RainbowCycle(led)
+    for i in range(768):
+        anim.step()
+        led.update()
+
+    led.fillOff()
 
 
-if __name__ == '__main__':
-    try:
-        while True:
-            start_party()
-    except KeyboardInterrupt:
-        stop_party()
+def color_chase():
+    colors = [
+        Color(randint(100, 255), 0, 0),
+        Color(0, randint(100, 255), 0),
+        Color(0, 0, randint(100, 255)),
+        Color(randint(200, 255), randint(200, 255), randint(200, 255)),
+    ]
+
+    for c in range(4):
+        anim = ColorChase(led, colors[c])
+
+        for i in range(num):
+            anim.step()
+            led.update()
+
+    led.fillOff()
+
+
+def color_wipe():
+    colors = [
+        Color(randint(100, 255), 0, 0),
+        Color(0, randint(100, 255), 0),
+        Color(0, 0, randint(100, 255)),
+        Color(randint(200, 255), randint(200, 255), randint(200, 255)),
+    ]
+
+    for c in range(4):
+        anim = ColorWipe(led, colors[c])
+
+        for i in range(num):
+            anim.step()
+            led.update()
+        # sleep(0.03)
+
+    led.fillOff()
+
+
+def larson_rainbow():
+    anim = LarsonRainbow(led, 2, 0.5)
+    for i in range(led.lastIndex * 4):
+        anim.step()
+        led.update()
+
+    led.all_off()
+
+
+def larson_scanner():
+    # scanner: single color and changing color
+    anim = LarsonScanner(led, Color(randint(150, 255), 0, 0))
+    for i in range(led.lastIndex * 4):
+        anim.step()
+        led.update()
+    # sleep(0.03)
+
+    led.fillOff()
+
+
+def random_anim():
+    anims = {
+        0: step_thru_colors,
+        1: do_the_wave,
+        2: make_a_rainbow,
+        3: even_rainbow,
+        4: color_chase,
+        5: color_wipe,
+        6: larson_rainbow,
+        7: larson_scanner,
+    }
+    return anims[randint(0, len(anims))]
+
+
+def main():
+    # Lower the brightness at night
+    if datetime.now().hour > 21:
+        led.setMasterBrightness(0.5)
+
+    anim = random_anim()
+    anim()
+
+
+main()
