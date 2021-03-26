@@ -37,7 +37,7 @@ if __name__ == '__main__':
 
                 if result is not None:
                     print("...he's here...Muahahahahaha")
-                    subprocess.run(['/home/pi/light-control/party.py'], cwd='/home/pi/RPi-LPD8806')
+                    subprocess.run(['/home/pi/light-control/party.py'], cwd='/home/pi/light-control/RPi-LPD8806')
                 else:
                     print("No one home. A pity.")
                     time.sleep(10)

@@ -2,17 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b16ff1f8-e5d7-44b4-8324-a6352c51f28f" name="Default" comment="Added PyBluez to requirements.txt&#10;&#10;Removed PARTY_FILE variable in favor of relative import.">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/light-control.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/light-control.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/RPi-LPD8806.pyproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/RPi-LPD8806.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/bootstrap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/example.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/off.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/raspledstrip/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/raspledstrip/LPD8806.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/raspledstrip/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/raspledstrip/animation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/raspledstrip/color.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/raspledstrip/ledstrip.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/raspledstrip/timecolors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/raspledstrip/util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/setup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.whitesource" beforeDir="false" afterPath="$PROJECT_DIR$/.whitesource" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom_colors" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/party.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/party.py" beforeDir="false" afterPath="$PROJECT_DIR$/party.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/whoshome.py" beforeDir="false" afterPath="$PROJECT_DIR$/whoshome.py" afterDir="false" />
@@ -35,9 +42,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <push-targets>
-      <push-target-info target-remote="live" target-branch="master" repo="$PROJECT_DIR$" source="master" />
-    </push-targets>
+    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="JupyterTrust" id="f58a784b-68c6-4666-9c63-305894416267" />
   <component name="ProjectId" id="1fh4Rc44YxY4Hya13p2djdmZ7l5" />
@@ -73,7 +78,7 @@
       <updated>1508359726445</updated>
       <workItem from="1596656984334" duration="4505000" />
       <workItem from="1597601286135" duration="75000" />
-      <workItem from="1616216423214" duration="13490000" />
+      <workItem from="1616216423214" duration="16702000" />
     </task>
     <task id="LOCAL-00001" summary="Added gitignore.">
       <created>1508364926674</created>
@@ -362,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596667262984</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Added PyBluez to requirements.txt&#10;&#10;Removed PARTY_FILE variable in favor of relative import.">
+      <created>1616712488585</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1616712488586</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

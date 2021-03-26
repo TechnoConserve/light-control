@@ -39,10 +39,8 @@ def step_thru_colors():
 
 
 def do_the_wave():
-    # animations - each animation method moves the animation forward one step on each call
-    # after each step, call update() to push it to the LED strip
     # sin wave animations
-    anim = Wave(led, Color(randint(0, 255)), Color(randint(0, 255)), Color(randint(0, 255)), randint(1, 5))
+    anim = Wave(led, Color(randint(0, 255), randint(0, 255), randint(0, 255)), randint(1, 5))
     for i in range(led.lastIndex):
         anim.step()
         led.update()
