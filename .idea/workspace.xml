@@ -1,28 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b16ff1f8-e5d7-44b4-8324-a6352c51f28f" name="Default" comment="Added PyBluez to requirements.txt&#10;&#10;Removed PARTY_FILE variable in favor of relative import.">
-      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/RPi-LPD8806.pyproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/RPi-LPD8806.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/bootstrap.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/off.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/raspledstrip/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/raspledstrip/LPD8806.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/raspledstrip/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/raspledstrip/animation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/raspledstrip/color.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/raspledstrip/ledstrip.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/raspledstrip/timecolors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/raspledstrip/util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPi-LPD8806/setup.py" afterDir="false" />
+    <list default="true" id="b16ff1f8-e5d7-44b4-8324-a6352c51f28f" name="Default" comment="Moved deprecated RPi-LDP8806 Library into this project&#10;&#10;Also made some related changes to account for direction structure changes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/party.py" beforeDir="false" afterPath="$PROJECT_DIR$/party.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whoshome.py" beforeDir="false" afterPath="$PROJECT_DIR$/whoshome.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +59,9 @@
       <updated>1508359726445</updated>
       <workItem from="1596656984334" duration="4505000" />
       <workItem from="1597601286135" duration="75000" />
-      <workItem from="1616216423214" duration="16702000" />
+      <workItem from="1616216423214" duration="17250000" />
+      <workItem from="1618160786784" duration="17000" />
+      <workItem from="1627006383190" duration="667000" />
     </task>
     <task id="LOCAL-00001" summary="Added gitignore.">
       <created>1508364926674</created>
@@ -374,14 +357,20 @@
       <option name="project" value="LOCAL" />
       <updated>1616712488586</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Moved deprecated RPi-LDP8806 Library into this project&#10;&#10;Also made some related changes to account for direction structure changes.">
+      <created>1616797977215</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1616797977215</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Back to run even though the source code says it's deprecated." />
     <MESSAGE value="Added threading to turning off lights since it tends to hang after turning them off." />
     <MESSAGE value="Removed thread Event passed to stop_party function." />
     <MESSAGE value="Removed threading attempts and added seconds parameter to stop_party animation run call." />
@@ -406,6 +395,7 @@
     <MESSAGE value="Explained setup in README.md" />
     <MESSAGE value="Removed CUSTOM_COLOR_PATH variable and replaced with relative path." />
     <MESSAGE value="Added PyBluez to requirements.txt&#10;&#10;Removed PARTY_FILE variable in favor of relative import." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added PyBluez to requirements.txt&#10;&#10;Removed PARTY_FILE variable in favor of relative import." />
+    <MESSAGE value="Moved deprecated RPi-LDP8806 Library into this project&#10;&#10;Also made some related changes to account for direction structure changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved deprecated RPi-LDP8806 Library into this project&#10;&#10;Also made some related changes to account for direction structure changes." />
   </component>
 </project>

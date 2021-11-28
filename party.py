@@ -146,6 +146,7 @@ def main():
 
     anim = random_anim()
     anim()
+    led.fillOff()
 
 
 main()
